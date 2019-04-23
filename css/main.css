@@ -1,0 +1,364 @@
+/*rest*/
+* {
+    box-sizing: border-box;
+}
+
+/*main container*/
+.container {
+    max-width: 60rem;
+    margin: 1rem;
+}
+
+/*logo alginment*/
+.logo{
+    width:60%;
+    text-align:center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+/*body alignment*/
+body {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    line-height: 1.5;
+    font-size: 0.75rem;
+    color: #595959;
+/*    margin: 0;*/
+}
+
+/*title fonts*/
+h1,h3{
+    font-family: 'Playfair Display', serif;
+}
+
+h2{
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+figure {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+
+figcaption {
+    margin: 1rem 0;
+}
+
+/*image alignment*/
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/*clearfix align*/
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*logo*/
+.navbar h1 {
+    text-align: center;
+}
+
+/*navbar link styling*/
+.navbar a {
+    text-decoration: none;
+    color: #595959;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    display: block;
+    margin: 0 0 1rem 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+/*navbar link hover*/
+.navbar a:hover {
+    color:#e01432;
+}
+
+
+/*masthead*/
+.masthead{ 
+    background-image: url("../img/tagline.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #CCC;
+    padding: 1.5rem 0;
+    display: none;
+}
+
+/*masthead container title*/
+.masthead .container h1 {
+    text-align: center;
+    color: #fafafa;
+    margin: 0;
+}
+
+/*main content*/
+.main-content .container h2, 
+.main-content .container figcaption {
+    text-align: center;
+}
+
+
+/*footer*/
+.footer .container {
+    border-top: 2px solid #DDD;
+}
+
+.footer .copy-rights {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.footer .social-media {
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+}
+
+.footer .social-media li a {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    color:#595959;
+}
+
+
+
+
+@media screen and (min-width: 30rem) {
+    
+    body {
+        font-size: 1rem;
+    }
+
+    .logo{
+    width:30%;
+    text-align:center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+    
+    .container {
+        margin: 1rem 2rem;
+    }
+    
+    /*navbar*/
+    .navbar li a {
+        float: left;
+        width: calc(50% - 0.5rem);
+        margin: 0 1rem 0 0;
+    }
+    
+    .navbar li:last-child a {
+        margin: 0;
+    }
+    
+    .tl {
+        display: none;
+    }
+    
+    
+    /*masthead*/
+    .masthead {  
+        display: block;
+        padding: 2.5rem 0;
+    }
+    
+    
+    /*main-content*/
+    .main-content .articles {
+        width: 40%;
+        margin: 0 2rem 0 0;
+        float: left;
+    }
+    
+    .main-content article {
+        border-bottom: 1px solid #DDD;
+        padding: 2rem 0;
+    }
+    
+    .main-content article:last-child {
+        border-bottom: none;
+    }
+    
+    .main-content article h2 {
+        margin: 0 0 1.5rem 0;
+        text-align: center;
+    }
+    
+    .main-content .container figcaption {
+        text-align: left;
+    }
+    
+    
+    /*portfolio*/
+    .main-content .container .snipets li {
+        display: block;
+        width: calc(50% - 2rem + 1rem);
+        margin: 0 2rem 0 0;
+        float: left;
+    }
+    
+    .main-content .container .snipets li:nth-child(2n) {
+        margin: 0;
+    }
+    
+    .main-content .container .snipets li figcaption {
+        text-align: center;
+    }
+    
+    
+    /*footer*/
+    .footer .copy-rights {
+        margin: 0 0 2rem 0;
+    }
+}
+
+
+
+@media screen and (min-width: 50rem) {
+    
+    body {
+        font-size: 1.25rem;
+    }
+
+    .logo{
+    width:30%;
+    float: left;
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    }
+
+    .container {
+        margin: 1rem 3rem;
+    }
+    
+    /*navbar*/
+    .navbar .brand {
+        width: 6rem;
+        margin: 0 2rem 0 0;
+        float: left;
+    }
+    
+    .navbar .nav-bar {
+        width: calc(100% - 8rem);
+        float: left;
+    }
+    
+    .navbar .nav-bar li a {
+        font-size: 1.25rem;
+        display: inline-block;
+        width: 25%;
+        margin: 1rem 0 0 0;
+    }
+    
+    .navbar .nav-bar li:last-child a {
+        margin: 1rem 0 0 0;
+    }
+    
+    .navbar h1 {
+        text-align: left;
+    }
+    
+    
+    
+    /*masthead*/
+    .bg-masthead {
+        padding: 3rem 0;
+    }
+    
+    .masthead .container h1 {
+        text-align: left;
+        font-size: 4rem;
+    }
+    
+    .main-content .articles {
+        width: 20%;
+        margin: 0 3rem 0 0;
+        float: left;
+    }
+     
+    /*article title stlying*/
+    .main-content article h2, 
+    .main-content article figcaption {
+        text-align: left;
+    }
+
+    /*main content article paragraph styling*/
+    .main-content article p {
+        margin: 0 0 1rem 0;
+        width: calc(80% - 3rem);
+        float: right;
+    }
+    
+    .main-content .container h2 {
+        text-align: left;
+    }
+
+    
+    
+    /*portfolio content styling*/
+    .main-content .container .snipets li {
+        width: calc(33.33% - 3rem + 1rem);
+        margin: 0 3rem 0 0;
+    }
+    
+    .main-content .container .snipets li:nth-child(2n) {
+        margin: 0 3rem 0 0;
+    }
+    
+    /*portfolio main content alignment*/
+    .main-content .container .snipets li:nth-child(3n) {
+        margin: 0;
+    }
+    
+    
+    /*footer*/
+    .footer .copy-rights {
+        margin: 0 0 3rem 0;
+        text-align: left;
+    }
+    
+    /*social media container aligment*/
+    .footer .social-media {
+        text-align: left;
+    }
+    
+    /*social media links*/
+    .footer .social-media li a {
+        width: auto;
+        padding: 0 2rem;
+        color:gray;
+    }
+
+    /*social media  content */
+    .footer .social-media li:first-child a {
+        padding: 0 2rem 0 0;
+    }
+}
+
+/*meadia query */
+@media screen and (min-width: 80rem) {
+    .container {
+        margin: 1rem auto;
+    }
+}
